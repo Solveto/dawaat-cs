@@ -181,7 +181,6 @@ footer {
 
 .social-list a {
     color: white;
-    
 }
 
 .social-list li:hover {
@@ -213,9 +212,14 @@ footer {
     .left {
         height: 80vh;
     }
+    
     .right {
         margin-top: 80vh;
-        padding: 5%;
+        padding: 0;
+    }
+    
+    .right-holder {
+        padding: 4%;
     }
     
     .logo-web {
@@ -223,9 +227,9 @@ footer {
     }
     
     .navbar {
-        width: calc(100% - 17.5%);
+        width: calc(100% - 8%);
         position: fixed;
-        top: 5%;
+        top: 3%;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -238,7 +242,25 @@ footer {
         text-align: right;
         margin-right: 0;
     }
+    
+    .menu-header {
+        font-size: 32px;
+        margin: 6% 0 4% 0;
+    }
+    
     .card {
         margin-bottom: 5%;
-    }   
+    } 
+    
+    .social-list li {
+        padding: 5px;
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+    
+    .credits {
+        font-size: 12px;
+    }
+    
 }
