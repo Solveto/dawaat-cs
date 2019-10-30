@@ -40,13 +40,16 @@ body {
 }
 
 .right {
-    height: 200vh;
-    padding: 2.5%;
+    padding: 0;
+}
+
+.right-holder {
+    padding: 4%;
 }
 
 .navbar {
     position: fixed;
-    width: calc(58.333% - 5%);
+    width: calc(58.62% - 5%);
     padding: 10px 0;
     background-color: white;
     border-radius: 5px;
@@ -108,6 +111,93 @@ body {
     margin: 3.75% 0 2.5% 0;
 }
 
+/*Card*/
+
+.card {
+    border: none;
+    margin-bottom: 10%;
+}
+
+.card-body {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+    padding: 4%;
+}
+
+.card-img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.item-details * {
+    margin: 0;
+}
+
+.item-title {
+    font-family: "Semi";
+    font-size: 20px;
+}
+
+.item-price {
+    font-size: 16px;
+}
+
+.counter {
+    border: none;
+    text-align: center;
+    padding: 0;
+}
+
+.counter-btn {
+    padding: 0 5px;
+    background-color: black;
+    border: 1px solid black;
+    width: 40px;
+}
+
+.counter-btn:active {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+footer {
+    margin-top: 20%;
+    background-color: #f2f2f2;
+    padding: 5% 4%;
+    font-size: 18px;
+}
+
+.social-list li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    padding: 10px;
+    vertical-align: middle;
+    background-color: black;
+    text-align: center;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-list a {
+    color: white;
+    
+}
+
+.social-list li:hover {
+    transform: scale(1.08);
+    color: #ffdd00;
+}
+
+.social-list i {
+    margin-top: 5px;
+}
+
+.social-list li a:hover {
+    color: black;
+}
+
+
 @media (min-width: 576px){ 
     .promo-banner {
         margin-top: calc(2.5% + 76px);
@@ -116,7 +206,6 @@ body {
 
 /* responsively apply fixed position */
 @media (max-width: 576px){
-    
     .semi {
         font-family: "Medium";
     }
@@ -134,14 +223,12 @@ body {
     }
     
     .navbar {
-        width: calc(100% - 10%);
+        width: calc(100% - 17.5%);
         position: fixed;
-        top: 2.5%;
+        top: 5%;
         padding-right: 15px;
         padding-left: 15px;
     }
-    
-    
     
     .navbar-brand {
         display: block;
@@ -151,5 +238,7 @@ body {
         text-align: right;
         margin-right: 0;
     }
-    
+    .card {
+        margin-bottom: 5%;
+    }   
 }
