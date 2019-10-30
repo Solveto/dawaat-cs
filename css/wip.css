@@ -250,7 +250,11 @@ footer {
     
     .card {
         margin-bottom: 5%;
-    } 
+    }
+    
+    .item-title {
+        font-size: 18px;
+    }
     
     .social-list li {
         padding: 5px;
