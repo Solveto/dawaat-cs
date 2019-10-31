@@ -22,6 +22,8 @@
     <!-- Font Awesome -->
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();
     </script>
+      
+      
   </head>
     
 <!--- ▀█▀ ░█▄─░█ ▀▀█▀▀ ░█▀▀█ ░█─░█ ░█▀▀▄ ░█▀▀▀ ░█▀▀█ █ █ █ 
@@ -29,7 +31,7 @@
       ▄█▄ ░█──▀█ ─░█── ░█─░█ ─▀▄▄▀ ░█▄▄▀ ░█▄▄▄ ░█─░█ ▄ ▄ ▄ 
 
       Just kidding but hey, you code Ruby? Email us at fahim@dawaat.co and let's change how people thinks food!
- -->
+-->
     
     <body>
         
@@ -41,7 +43,7 @@
 
                 <div class="col-md-7 offset-md-5 col-12 bg-white right">
                     <div class="right-holder">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-lg sticky-top">
                             <a class="navbar-brand" href="#"><img src="http://bit.ly/31WmmGG" width="90px" /></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                                 <img src="https://img.icons8.com/ios-glyphs/208/000000/menu.png" width="30px;">
@@ -259,7 +261,16 @@
         
         
         
-        
+        <script type="text/javascript">
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.navbar').css({});
+                }
+                else {
+                    $('nav').removeClass('navbar-scrolled');
+                }
+            });
+        </script>
         
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

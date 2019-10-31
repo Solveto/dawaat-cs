@@ -48,8 +48,10 @@ body {
 }
 
 .navbar {
+/*
     position: fixed;
     width: calc(58.62% - 5%);
+*/
     padding: 10px 0;
     background-color: white;
     border-radius: 5px;
@@ -199,7 +201,7 @@ footer {
 
 @media (min-width: 576px){ 
     .promo-banner {
-        margin-top: calc(2.5% + 76px);
+        margin-top: 4%;
     }
 }
 
@@ -221,23 +223,31 @@ footer {
     .right-holder {
         padding: 4%;
     }
-    
+
     .logo-web {
         display: none;
     }
-    
+
     .navbar {
-        width: calc(100% - 8%);
+        padding-right: 4%;
+        padding-left: 4%;
+        transition: 0.3s;
         position: fixed;
-        top: 3%;
-        padding-right: 15px;
-        padding-left: 15px;
+        top: 2%;
+        width: calc(100% - 8%);
     }
-    
+
+    .navbar-scrolled {
+        top: 0%;
+        width: calc(100%);
+        left: 0;
+        border-radius: 0;
+    }
+
     .navbar-brand {
         display: block;
     }
-    
+
     .nav-link {
         text-align: right;
         margin-right: 0;
